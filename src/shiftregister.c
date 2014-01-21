@@ -31,15 +31,6 @@
 uint16_t delay_time = DEFAULT_DELAY_TIME;
 
 /*
- * delays for a certain time
- * Doesn't currently work for delay > 4600
- */
-static void delay_ms(uint16_t delay) {
-	TCNT1 = 0;
-	while (TCNT1/CLOCK_TICKS_PER_MS < delay);
-}
-
-/*
  * Main
  */
 int main(void) {

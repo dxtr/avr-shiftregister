@@ -3,18 +3,8 @@
 
 #include "globals.h"
 #include "io.h"
+#include "misc.h"
 #include "pattern.h"
-
-/*
- * delays for a certain time
- * Doesn't currently work for delay > 4600
- */
-void delay_ms(uint16_t delay) {
-	TCNT1 = 0;
-	while (TCNT1/CLOCK_TICKS_PER_MS < delay);
-}
-
-
 
 /*
  * A pattern that simply increments an integer
