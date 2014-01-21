@@ -1,0 +1,3 @@
+This is a simple project for controlling a shift register (with 8 LEDs), a
+potentiometer and (soon) a push button to toggle between all possible LED
+patterns
